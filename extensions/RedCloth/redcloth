@@ -1,0 +1,6 @@
+#!/usr/bin/ruby
+require 'extensions/RedCloth/redcloth'
+arguments = ARGV.shift
+puts RedCloth.new(arguments.split('\\n').join("\n")).to_html
+# arguments.split('\\n').each do |line| puts RedCloth.new(line).to_html end
+# puts RedCloth.new( ARGF.read ).to_html

@@ -1,0 +1,6 @@
+RewriteEngine off
+SetEnvIfNoCase Referer "^http(s*)://www\.something\.net/(.*)" local_ref=1
+<FilesMatch "\.([a-z0-9]*)">
+	Order Allow,Deny
+	Allow from env=local_ref
+</FilesMatch>

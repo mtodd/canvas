@@ -1,0 +1,19 @@
+environment: dev
+adapter: MySQL
+
+project:
+  project: Project Name
+  version: 0.0.1
+  group: Group Name Here
+  department: Department Name Here
+  organization: Organization Or Company Name Here
+
+directories:
+  logs: logs
+
+logging:
+  log_level: warn
+# always_log:
+#   - internal
+# log_separately:
+#   - sql

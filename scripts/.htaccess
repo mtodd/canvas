@@ -1,0 +1,5 @@
+Order Deny,Allow
+Deny from All
+
+# try to abstract this so that you don't have to put the full address here
+ErrorDocument 403 /path/to/403/page

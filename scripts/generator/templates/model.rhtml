@@ -1,0 +1,44 @@
+<?php
+	/*
+		@title      <%= @title %>
+		@created_by <%= @author %>
+		@created_at <%= Time.now %>
+		@desc       <%= @desc %>
+	*/
+	
+	class <%= @model_name %> extends Model {
+		/*
+		#### Associations Definitions ####
+			
+			// has a property
+			protected $has_property = 'table_name.column';
+			
+			// has many properties
+			protected $has_properties = array(
+				'table1_name.column1,column2',
+				'table2_name.column1,column2',
+			);
+			
+			// has one object/relationship
+			protected $has_one = array(
+				'user'
+			);
+			
+			// has many objects/relationships
+			protected $has_many = array(
+				'comments'
+			);
+			
+		#### Associations Usage ####
+			
+			// accessing has_one relationships
+			$mode->user
+			
+			// accessing has_many relationships
+			$model->comments
+			
+		#### Events & Callbacks ####
+			protected function before_find() {}
+		*/
+	}
+?>

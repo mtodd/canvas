@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+# @title  Generator
+# @author Matt Todd
+# @desc   script to generate models, controllers, and views
+
+require 'erb'
+require 'scripts/generator/base.rb'
+require 'scripts/generator/actions.rb'
+
+arguments = ARGV
+command = arguments.shift
+
+Generator.new(arguments).instance_eval("generate_" + command)
+
+print "\n"

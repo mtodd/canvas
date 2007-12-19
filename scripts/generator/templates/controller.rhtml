@@ -1,0 +1,38 @@
+<?php
+	/*
+		@title      <%= @title %>
+		@created_by <%= @author %>
+		@created_at <%= Time.now %>
+		@desc       <%= @desc %>
+	*/
+	
+	class <%= @controller_name %>_controller extends application_controller {
+		<% for action in @actions %>
+		public function <%= action %>() {
+			// controller logic for <%= action %> action here
+		}
+		<% end %>
+		
+		/*
+			#### Example Code ####
+			
+			// respond (send to View)
+			$this->response->name = $value;
+			
+			// redirect to another action
+			$this->redirect_to(array('controller'=>'x', 'action'=>'y', 'id'=>'1'))
+			
+			// find all 'shoes' with property x being 12
+			$shoe = new shoe();
+			$shoe->find(array('where'=>array('x=":x"', 'x'=>'12')))->all();
+			
+			// or, simpler
+			$shoe = new shoe();
+			$shoe->find_by_x('12')->all();
+			
+			// find a shoe with id 14 and respond
+			$shoe = new shoe();
+			$this->response->shoe = $shoe->find_by_id('14');
+		*/
+	}
+?>

@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+# @title  Generator
+# @author Matt Todd
+# @desc   script to generate models, controllers, and views
+
+print "Setting permissions in " + `pwd`
+print "(No response means no files were changed.)\n"
+
+# set logs' permissions
+print `chmod -v a+rw-x logs/*.log`
+
+# set views' compile dirs' permissions
+print `chmod -v a+rwx views/*/compile views/*/cache views/*/config`
+
+# set extensions' executables' permissions
+print `chmod -v a+x extensions/RedCloth/redcloth`
+
+# done
+print "done.\n"

@@ -1,0 +1,45 @@
+#
+#    S P Y C
+#      a simple php yaml class
+#   v0.2(.2)
+#
+# Load this file!
+# >> $changes = Spyc::YAMLLoad('CHANGES');
+#
+--- %YAML:1.1
+title: Spyc -- a Simple PHP YAML Class
+version: 0.2.2
+author: [chris wanstrath, chris@ozmm.org]
+websites: [http://www.yaml.org, http://spyc.sourceforge.net/]
+license: [MIT License, http://www.opensource.org/licenses/mit-license.php]
+copyright: (c) 2005-2006 Chris Wanstrath
+
+changes:
+  0.2.2:
+    - Implemented Mustafa Kumas' changes:
+      - Improved regex in _inlineEscape() method.
+    - Improved handling of escaped single and double quotes within strings.
+  
+  0.2.1:
+    - Implemented Fabien Potencier's changes:
+      - Fixed warnings reported by E_STRICT
+      - More complete YAML boolean support (on/off yes/no y/n)
+    - Produce error when someone tries to use tabs instead of spaces.
+    - Moved array_kmerge function into a private method.
+    - Added PHP5 strict version of class (spyc.php5).
+    - Added line break preservation in dump()
+    - Added some string checking sanity before calling file_exists()
+    
+  0.2:
+    - Hashes (#) can now be used in strings, and comments work better.
+    - Fixed warning about non-object.
+    - Numeric keys are now allowed.
+    - '"key" : value' is now allowed (space after quoted key name)
+    - Underscore (_) and other crazy characters now allowed in key names of 
+      dumped arrays.
+    - Added options/parameters to change indent and wordwrap length in dump()
+    - Added a really primitive, lo-fi output test script.
+
+  0.1.1:
+    - Fixed notices that were being generated when set to E_ALL.
+    - Defined some private properties like a good OOPer.

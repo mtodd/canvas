@@ -1,0 +1,20 @@
+production:
+  adapter : MySQL
+  host : localhost
+  database : database
+  username : username
+  password : password
+
+test:
+  adapter : MySQL
+  host : localhost
+  database : database
+  username : username
+  password : password
+
+dev:
+  adapter : MySQL
+  host : localhost
+  database : database
+  username : username
+  password : password
