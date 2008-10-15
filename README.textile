@@ -1,0 +1,62 @@
+h1. Canvas
+
+A web application development framework for PHP5.
+
+h2. Status
+
+This project is *no longer under active development* and should not be used in
+production environments.
+
+This is being put up here as a historical reference.
+
+h2. History
+
+Canvas began as a project to simplify development of web applications at
+"The HUB":http://thehub.clayton.edu/, Tech Support for
+"Clayton State University":http://clayton.edu in Atlanta, GA. We had several
+projects planned for simplifying our workflow and keeping track of historical
+records so obviously a database-backed web application would fit perfectly,
+but being a perfectionist, I wasn't happy with the available various
+development tools and frameworks, including CakePHP, Symphony, and the
+unfinished Zend Framework.
+
+So I decided to take the MVC pattern and make a framework to simplify my tasks.
+
+Having seen some of Rails I had a good source to take some inspiration from
+(though, at the time, I didn't understand the code very well at all so I
+just wrote how I thought things should work). I was using Ruby for various
+small scripts and had a great appreciation of clean and conscious design, which
+had a significant impact on how I developed and assembled this framework.
+
+I worked hard to make the framework be clean and modular as possible.
+
+What's included in this framework is essentially ActiveRecord and ActionPack.
+However, all of the development is original (and as such, being developed
+solely by myself, lacks a lot of functionality and polish). The model supports
+associations, finder conditions, etc, but nothing to a very great degree. I
+chose Smarty because we had some other programmers on staff with experience
+with it and some templates already made with it so it made sense to employ it.
+
+However, after using Ruby more and more and working with the PHP community and
+core contributors, I grew conflicted over the development and direction of the
+language and a lot of the limiting, technical issues that it seemed to embrace
+and not want to change. Things as obvious as simplifying the way to write an
+array literal to serious issues with early binding on static class attributes,
+etc.
+
+This and my further delving into Rails, as well as the use of Canvas to educate
+the developers in The HUB in sane development practices, good design and
+architecture, and familiarity with the MVC pattern, we were finally able to
+transition to using Rails for several projects, and the need for this framework
+disappeared (since it was mainly used internally, though it was open source
+for its entire life).
+
+And here we are today, years after its creation. I realized I didn't have it
+here on GitHub and it lacked any documentation about where it came from and why
+it's no longer being developed, so I wrote this.
+
+h2. Copyright & License
+
+(c) 2006-2008 Matt Todd.
+
+Licensed under the MIT License.
